@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script>
 </head>
@@ -12,12 +13,12 @@
 	<main id="app">
 		<section class="form-container">
 			<label for="nickname">Your Nickname (optional)</label>
-			<input type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+			<input style="border:none" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 
 			<form>
 				<label for="message">Something to say?</label>
-				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input @click.prevent="dispatchMessage" type="submit">
+				<textarea style="border:none" v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<input style="border:none" @click.prevent="dispatchMessage" type="submit">
 			</form>
 		</section>
 
