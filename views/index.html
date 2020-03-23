@@ -7,13 +7,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script>
+	
 </head>
 
 <body>
 	<main id="app">
 		<section class="form-container">
 			<label for="nickname">Your Nickname (optional)</label>
-			<input style="border:none" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+			<input v-model="nickname" style="border:none" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 
 			<form>
 				<label for="message">Something to say?</label>
